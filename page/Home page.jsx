@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function SocialLearningAndNetworkingSystem() {
 
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("TRY");
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [courses, setCourses] = useState([]); // For storing the student's courses
   const [groups, setGroups] = useState([]); // For social groups
