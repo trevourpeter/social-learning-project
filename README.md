@@ -5,3 +5,16 @@ The social Learning and networking platform (SLNP) is designed to improve the le
 
 ## Author
 ### Trevous Peter Mulenga * (Lead Developer)*
+## Collaborator
+### Livingi Misheck
+
+## Table of Contents
+1.<ins> Project Objectives <ins>
+2.<ins> Features <ins>
+3.<ins> Tech Stack <ins>
+4.<ins> Installation Guide <ins>
+5.<ins> Usage Instructions <ins>
+6.<ins> Project Structure <ins>
+7.<ins> Contribution Guidelines <ins>
+8.<ins> License <ins>
+9.<ins> Contact Information <ins>
