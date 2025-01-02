@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import HomePage from "./pages/Home";
 import PrivacyPolicyPage from "./pages/Privacy";
 import TermsOfServicePage from "./pages/Terms";
+import ChatApp from "./pages/Chat";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/home" element={<HomePage/>} />
           <Route exact path="/privacy" element={<PrivacyPolicyPage/>} />
           <Route exact path="/tos" element={<TermsOfServicePage/>} />
+          <Route exact path="/chat" element={<ChatApp/>} />
         </Routes>
     </Router>
   );

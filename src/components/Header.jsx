@@ -12,7 +12,7 @@ const Header = () => {
                     <FiBell size={24} />
                     <span className="absolute top-0 right-0 text-xs text-red-500">3</span>
                 </button>
-                <button>
+                <button onClick={()=>{nav("/chat")}}>
                     <FiMessageSquare size={24} />
                 </button>
                 <button>
