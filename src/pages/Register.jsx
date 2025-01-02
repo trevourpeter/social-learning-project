@@ -59,6 +59,16 @@ const Register = () => {
           />
         </div>
 
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-600">
+            Profile Picture
+          </label>
+          <input
+            type="file"
+            className="border rounded w-full p-2 mt-1 focus:ring focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+
         {/* Password */}
         <div className="mb-6 relative">
           <label className="block text-sm font-medium text-gray-600">
