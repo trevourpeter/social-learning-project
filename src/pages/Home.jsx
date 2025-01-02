@@ -23,7 +23,7 @@ const HomePage = () => {
       {/* Welcome Message */}
       <div className="text-center py-8">
         <h2 className="text-3xl font-semibold">Welcome back, {userName}!</h2>
-        <p className="text-gray-500 mt-2">Here’s what’s happening today:</p>
+        <p className="text-gray-500 mt-2">Here’s what’s happening today</p>
       </div>
 
       {/* Main Dashboard */}
