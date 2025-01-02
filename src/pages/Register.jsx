@@ -1,4 +1,3 @@
-// src/pages/Register.js
 import React, { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
@@ -6,14 +5,14 @@ const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex items-center justify-center h-full bg-gray-100 p-8">
       <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
         <h1 className="text-2xl font-bold text-gray-700 text-center mb-6">
           Register
         </h1>
 
         {/* Username */}
-        <div className="mb-4">
+        <div className="mb-6">
           <label className="block text-sm font-medium text-gray-600">
             Username
           </label>
@@ -25,7 +24,7 @@ const Register = () => {
         </div>
 
         {/* Email */}
-        <div className="mb-4">
+        <div className="mb-6">
           <label className="block text-sm font-medium text-gray-600">
             Email
           </label>
@@ -37,7 +36,7 @@ const Register = () => {
         </div>
 
         {/* First Name */}
-        <div className="mb-4">
+        <div className="mb-6">
           <label className="block text-sm font-medium text-gray-600">
             First Name
           </label>
@@ -49,7 +48,7 @@ const Register = () => {
         </div>
 
         {/* Last Name */}
-        <div className="mb-4">
+        <div className="mb-6">
           <label className="block text-sm font-medium text-gray-600">
             Last Name
           </label>
@@ -90,7 +89,7 @@ const Register = () => {
         {/* Footer */}
         <p className="text-sm text-gray-500 text-center mt-6">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-500 hover:underline">
+          <a href="/" className="text-blue-500 hover:underline">
             Login
           </a>
         </p>
