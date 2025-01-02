@@ -15,7 +15,7 @@ const Header = () => {
                 <button onClick={()=>{nav("/chat")}}>
                     <FiMessageSquare size={24} />
                 </button>
-                <button>
+                <button onClick={()=>{nav("/profile")}}>
                     <FiUser size={24} />
                 </button>
             </div>
