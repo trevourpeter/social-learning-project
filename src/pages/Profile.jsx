@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const ProfilePage = () => {
   const [user, setUser] = useState({
@@ -28,7 +30,7 @@ const ProfilePage = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-      {/* Profile Header */}
+      <Header/>
       <div className="flex items-center space-x-4">
         <img
           src={user.profilePicture}
@@ -146,6 +148,8 @@ const ProfilePage = () => {
           </button>
         )}
       </div>
+
+      <Footer/>
     </div>
   );
 };
