@@ -1,6 +1,6 @@
 import React from 'react';
-import { FiBell, FiUser, FiMessageSquare } from 'react-icons/fi';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   const userName = "John Doe"; // For now, using a hardcoded name
@@ -88,7 +88,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      
+      <Footer />
     </div>
   );
 };

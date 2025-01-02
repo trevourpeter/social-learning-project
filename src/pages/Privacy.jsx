@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const PrivacyPolicyPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-8 px-4 md:px-16">
+        <Header />
       <div className="bg-white shadow rounded-lg p-6">
         <h1 className="text-3xl font-bold mb-4 text-center">Privacy Policy</h1>
         
