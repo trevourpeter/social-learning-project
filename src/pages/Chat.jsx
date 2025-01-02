@@ -8,22 +8,22 @@ import Footer from '../components/Footer';
 
 const ChatApp = () => {
     const [messages, setMessages] = useState([]);
-    const [activeUserId, setActiveUserId] = useState(1);
-    const [users, setUsers] = useState([]);
+    const [activeGroupId, setActiveGroupId] = useState(1);
+    const [groups, setGroups] = useState([]);
 
     useEffect(() => {
-        // Simulate fetching users from an API
-        const fetchedUsers = [
-            { id: 1, name: 'Alice', avatar: '/avatars/alice.jpg' },
-            { id: 2, name: 'Bob', avatar: '/avatars/bob.jpg' },
-            { id: 3, name: 'Charlie', avatar: '/avatars/charlie.jpg' },
+        // Simulate fetching groups from an API
+        const fetchedGroups = [
+            { id: 1, name: 'Group A', avatar: '/avatars/groupA.jpg' },
+            { id: 2, name: 'Group B', avatar: '/avatars/groupB.jpg' },
+            { id: 3, name: 'Group C', avatar: '/avatars/groupC.jpg' },
         ];
-        setUsers(fetchedUsers);
+        setGroups(fetchedGroups);
     }, []);
 
     const handleSendMessage = (content) => {
         const newMessage = {
-            senderId: activeUserId,
+            senderId: activeGroupId,
             content,
             timestamp: new Date().toLocaleTimeString(),
         };
@@ -33,8 +33,8 @@ const ChatApp = () => {
     return (
         <div className="flex flex-col h-screen">
             <Header />
-            <AvatarList users={users} activeUserId={activeUserId} />
-            <ChatWindow messages={messages} activeUserId={activeUserId} />
+            <AvatarList users={groups} activeUserId={activeGroupId} />
+            <ChatWindow messages={messages} activeUserId={activeGroupId} />
             <MessageInput onSend={handleSendMessage} />
             <Footer />
         </div>
@@ -42,7 +42,7 @@ const ChatApp = () => {
 };
 
 ChatApp.propTypes = {
-    users: PropTypes.arrayOf(
+    groups: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             name: PropTypes.string.isRequired,
@@ -56,7 +56,7 @@ ChatApp.propTypes = {
             timestamp: PropTypes.string.isRequired,
         })
     ),
-    activeUserId: PropTypes.number,
+    activeGroupId: PropTypes.number,
 };
 
 export default ChatApp;
