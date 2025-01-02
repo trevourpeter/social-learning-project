@@ -1,75 +1,70 @@
-# SOCIAL LEARNING AND NETWORKING PLATFORM 
-## project  overvew
+# Getting Started with Create React App
 
-The social Learning and networking platform (SLNP) is designed to improve the learning experience for students at Gideon Robert University. This platform will streamline educational content delivery, enhance communication between students and instructors, and provide an efficient way to manage and track academic progress. The system will include features such as course management, online assessments, grading, and more.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Author
--**Trevous Peter Mulenga** (Lead Developer)
+## Available Scripts
 
-## Collaborator
--**Livingi Misheck**
+In the project directory, you can run:
 
----
+### `npm start`
 
-## Table of Contents
-1. [Project Objectives](#project-objectives)
-2. [Features](#features)
-3. [Tech Stack](#tech-stack)
-4. [Installation Guide](#installation-guide)
-5. [Usage Instructions](#usage-instructions)
-6. [Project Structure](#project-structure)
-7. [Contribution Guidelines](#contribution-guidelines)
-8. [License](#license)
-9. [Contact Information](#contact-information)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Project Objectives
-The primary objectives of this SLNP are:
-- To provide an intuitive and user-friendly interface for students and instructors.
-- To allow easy course content management and delivery.
-- To enhance communication between students and faculty.
-- To provide tools for online assessments and grading.
-- To track and report student progress effectively.
+### `npm test`
 
-## Features
-### For Students
-- **Course Enrollment**: Students can enroll in courses and access all related materials.
-- **Interactive Lessons**: Access to video lectures, reading materials, and other educational resources.
-- **Quizzes and Exams**: Online assessments to test knowledge and skills.
-- **Progress Tracking**: View grades, assignments, and overall course progress.
-- **Discussion Forums**: Engage in discussions with peers and instructors.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### For Instructors
-- **Course Creation**: Create and manage courses, modules, and lessons.
-- **Assignment Management**: Upload assignments and manage submissions.
-- **Grading System**: Easily grade assignments and exams.
-- **Communication Tools**: Engage with students through messaging and announcements.
-- **Student Performance Analytics**: Track student progress and generate reports.
+### `npm run build`
 
-### For Administrators
-- **User Management**: Manage user accounts (students, instructors, and staff).
-- **Course Management**: Oversee the creation and organization of courses.
-- **System Analytics**: Access system usage reports and performance metrics.
-- **Customizations**: Configure SLNP settings to align with university policies.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Tech stack
-- **Frontend**: React.js or Vue.js
-- **Backend**: Python (Django Channels for real-time features) with RESTful APIs
-- **Database**: PostgreSQL
-- **Authentication**: OAuth 2.0
-- **Hosting**: AWS or DigitalOcean
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Installation Guide
-### Prerequisites
-- Node.js (for Node.js backend) / Python (for Django backend)
-- MySQL/PostgreSQL/MongoDB Database
-- Git
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Usage Instructions
-- **Login/Register**: Students and instructors must register or log in to access their dashboards.
-- **Course Enrollment**: Students can browse available courses and enroll.
-- **Lesson Access**: Access lessons and course materials from the course dashboard.
-- **Submit Assignments**: Upload assignments and take quizzes as instructed.
-- **Grades**: View grades and feedback in the gradebook section.
-  
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
