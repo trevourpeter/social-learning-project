@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GroupCard from "../components/GroupCard";
 
 const HomePage = () => {
   const userName = "John Doe"; // For now, using a hardcoded name
+  const [isModalVisible, setModalVisible] = useState(false);
   const recentActivities = [
     "Joined the Math Study Group",
     "Commented on a Physics Discussion",
@@ -92,9 +93,65 @@ const HomePage = () => {
               />
             ))}
           </div>
-          <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded">
+          <button
+            className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
+            onClick={() => setModalVisible(true)} // Show modal when clicked
+          >
             Create New Group
           </button>
+          {/* Modal for Creating a Group */}
+          {isModalVisible && (
+            <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
+              <div className="bg-white rounded-lg p-6 w-1/3">
+                <h2 className="text-2xl font-semibold mb-4">
+                  Create New Group
+                </h2>
+                <form>
+                  <div className="mb-4">
+                    <label
+                      className="block text-gray-700 mb-2"
+                      htmlFor="groupImage"
+                    >
+                      Profile Picture
+                    </label>
+                    <input
+                      type="file"
+                      id="groupImage"
+                      className="w-full px-3 py-2 border rounded"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      className="block text-gray-700 mb-2"
+                      htmlFor="groupName"
+                    >
+                      Group Name
+                    </label>
+                    <input
+                      type="text"
+                      id="groupName"
+                      className="w-full px-3 py-2 border rounded"
+                    />
+                  </div>
+                  <div className="flex justify-end">
+                    <button
+                      type="button"
+                      className="bg-red-500 text-white px-4 py-2 rounded mr-2"
+                      onClick={() => setModalVisible(false)} // Hide modal when clicked
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      className="bg-green-500 text-white px-4 py-2 rounded"
+                    >
+                      Create
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Mentorship Match */}
