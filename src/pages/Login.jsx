@@ -1,8 +1,12 @@
 // src/pages/Login.js
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+    const nav = useNavigate();
+
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
@@ -30,7 +34,7 @@ const Login = () => {
         </div>
 
         {/* Login Button */}
-        <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
+        <button onClick={() => nav("/home")} className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
           Login
         </button>
 
