@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const ChatApp = () => {
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState({});
     const [activeGroupId, setActiveGroupId] = useState(1);
     const [groups, setGroups] = useState([]);
 
@@ -19,22 +19,37 @@ const ChatApp = () => {
             { id: 3, name: 'Group C', avatar: '/avatars/groupC.jpg' },
         ];
         setGroups(fetchedGroups);
+
+        // Initialize message storage per group
+        const initialMessages = {};
+        fetchedGroups.forEach(group => {
+            initialMessages[group.id] = [];
+        });
+        setMessages(initialMessages);
     }, []);
 
     const handleSendMessage = (content) => {
         const newMessage = {
             senderId: activeGroupId,
             content,
-            timestamp: new Date().toLocaleTimeString(),
+            timestamp: new Date().toLocaleString(),
         };
-        setMessages((prev) => [...prev, newMessage]);
+
+        setMessages((prevMessages) => ({
+            ...prevMessages,
+            [activeGroupId]: [...prevMessages[activeGroupId], newMessage],
+        }));
+    };
+
+    const handleGroupChange = (groupId) => {
+        setActiveGroupId(groupId);
     };
 
     return (
         <div className="flex flex-col h-screen">
             <Header />
-            <AvatarList users={groups} activeUserId={activeGroupId} />
-            <ChatWindow messages={messages} activeUserId={activeGroupId} />
+            <AvatarList users={groups} activeUserId={activeGroupId} onSelectUser={handleGroupChange} />
+            <ChatWindow messages={messages[activeGroupId] || []} activeUserId={activeGroupId} />
             <MessageInput onSend={handleSendMessage} />
             <Footer />
         </div>
@@ -49,12 +64,14 @@ ChatApp.propTypes = {
             avatar: PropTypes.string.isRequired,
         })
     ),
-    messages: PropTypes.arrayOf(
-        PropTypes.shape({
-            senderId: PropTypes.number.isRequired,
-            content: PropTypes.string.isRequired,
-            timestamp: PropTypes.string.isRequired,
-        })
+    messages: PropTypes.objectOf(
+        PropTypes.arrayOf(
+            PropTypes.shape({
+                senderId: PropTypes.number.isRequired,
+                content: PropTypes.string.isRequired,
+                timestamp: PropTypes.string.isRequired,
+            })
+        )
     ),
     activeGroupId: PropTypes.number,
 };
