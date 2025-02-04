@@ -71,7 +71,7 @@ The primary objectives of this LMS are:
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/lms.git
+  (https://github.com/trevourpeter/social-learning-project.git)
    cd SLANS
    ```
 
