@@ -4,7 +4,7 @@
 social learning and networking system (SLANS) is designed to improve the learning experience for students at Gideon Robert University. This platform will streamline educational content delivery, enhance communication between students and instructors, and provide an efficient way to manage and track academic progress. The system will include features such as course management, online assessments, grading, and more.
 
 ### Author
-- **TREVOUS PETER MULENGA ** (Lead Developer)
+- **TREVOUS PETER MULENGA (Lead Developer)**
 
 ### Collaborators
 - **ROBERT PHIRI**
