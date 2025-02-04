@@ -13,14 +13,14 @@ const TermsOfServicePage = () => {
                     <section className="mb-8">
                         <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
                         <p className="text-gray-700">
-                            By using the LearningHub platform, you agree to abide by these Terms of Service. If you do not agree, please do not use the platform.
+                            By using the Socal Learning and networkingHub platform, you agree to abide by these Terms of Service. If you do not agree, please do not use the platform.
                         </p>
                     </section>
 
                     <section className="mb-8">
                         <h2 className="text-2xl font-semibold mb-4">Acceptance of Terms</h2>
                         <p className="text-gray-700">
-                            By accessing or using LearningHub, you accept and agree to these Terms of Service and our Privacy Policy.
+                            By accessing or using Socal Learning and networkingHub , you accept and agree to these Terms of Service and our Privacy Policy.
                         </p>
                     </section>
 
@@ -41,7 +41,7 @@ const TermsOfServicePage = () => {
                     <section className="mb-8">
                         <h2 className="text-2xl font-semibold mb-4">Prohibited Uses</h2>
                         <p className="text-gray-700">
-                            You may not use LearningHub for any unlawful activities or to infringe on the rights of others.
+                            You may not use Socal Learning and networkingHub  for any unlawful activities or to infringe on the rights of others.
                         </p>
                     </section>
 
