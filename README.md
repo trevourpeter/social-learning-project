@@ -118,7 +118,7 @@ The primary objectives of this LMS are:
 
 ## Project Structure
 ```
-lms/
+SLANS/
 ├── frontend/          # React/Angular/Vue.js code
 ├── backend/           # Node.js/Express/Django code
 ├── database/          # Database schema and migration files
