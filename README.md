@@ -26,7 +26,7 @@ social learning and networking system (SLANS) is designed to improve the learnin
 ---
 
 ## Project Objectives
-The primary objectives of this LMS are:
+The primary objectives of this SLANS are:
 - To provide an intuitive and user-friendly interface for students and instructors.
 - To allow easy course content management and delivery.
 - To enhance communication between students and faculty.
